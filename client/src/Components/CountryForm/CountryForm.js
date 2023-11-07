@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CountryForm.css'; 
+import backg from '../../images/backg.avif';
 
 const countryOptions = [
   { value: 'afghanistan', label: 'Afghanistan' },
@@ -82,6 +83,7 @@ function CountryForm() {
   };
 
   return (
+    <div className='maincontainer'>
     <div className="container">
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -241,6 +243,7 @@ function CountryForm() {
           Submit
         </button>
       </form>
+    </div>
     </div>
   );
 }
